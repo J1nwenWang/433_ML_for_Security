@@ -24,8 +24,7 @@ int main(void)
     char buff[100]; 
     int log_in = 0;
     char tryPasswd[4];
-    void (*nextStep)(void) = loginFail; // Function pointer for next action
-
+    void (*nextStep)(void) = loginFail; 
     printf("Please input username: ");
     gets(buff); 
 
@@ -37,7 +36,7 @@ int main(void)
     }
 
     if(log_in!=0){
-        nextStep = accountManipulation; // Set the function pointer to the success function.
+        nextStep = accountManipulation; 
     }
 
     nextStep();

@@ -21,7 +21,7 @@ int loginFail(){
 int main(void)
 {
     char *passwd = "1337"; // The password we expect
-    char buff[100]; // Unused buffer for complexity
+    char buff[100]; 
     int log_in = 0;
     char tryPasswd[4];
     void (*nextStep)(void) = loginFail; // Function pointer for next action

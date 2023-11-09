@@ -1,5 +1,5 @@
 // Run: gcc ./login.c -fno-stack-protector -o ./login
-// Then run the program: ./vul1
+// Then run the program: ./login
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
